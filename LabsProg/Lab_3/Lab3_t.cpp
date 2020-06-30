@@ -37,6 +37,11 @@ int main(){
     std::cout << "----------------------------|" << std::endl;
     merge_l.erase(3);
     std::cout << merge_l << " - erased merge_l[3]" << std::endl;
+    int_list_t test_c(test_list);
+    std::cout << test_list.size() << std::endl;
+    std::cout << test_list << std::endl;
+    std::cout << test_c.size() << std::endl;
+    std::cout << test_c << std::endl;
 
     return 0;
 }
