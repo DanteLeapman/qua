@@ -37,7 +37,6 @@ int_list_t::node_t *int_list_t::get(int pos) const {
 // int_list_t(const int_list_t &other);
 // COPY $other list O(other.size)
 int_list_t::int_list_t(const int_list_t &other) : int_list_t() {
-    l_size = 0;
     auto *current = other.head->next;
     while (current != other.tail) {
         push_back(current->value);
